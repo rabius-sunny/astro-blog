@@ -1,0 +1,78 @@
+---
+import Layout from "../../layouts/Layout.astro";
+import { Image } from "astro:assets";
+---
+
+<Layout title="About">
+  <section class="mx-auto max-w-4xl">
+    <div class="md:flex md:gap-4">
+      <Image
+        height={500}
+        width={500}
+        loading="eager"
+        alt="Sunny's photo"
+        src="https://rabius-sunny.vercel.app/_next/image?url=%2Fimages%2Fphoto.jpg&w=640&q=100"
+        class="aspect-square size-20 overflow-hidden rounded-full bg-slate-500 object-cover"
+      />
+
+      <div
+        class="mt-4 text-lg [&_a]:text-primary [&_a]:underline [&_a]:after:content-['↗']"
+      >
+        <h1 class="font-secondary text-4xl">Rabius Sunny</h1>
+        <p class="max-w-[60ch] text-gray-500">
+          Building & Helping brands to bring their ideas to life❤️, together
+          let's build great things. No nonsense, always on cutting-edge. 🌍
+          Based in <strong class="text-text">Dhaka, Bangladesh</strong>.
+        </p>
+
+        <p class="mt-6">Currently</p>
+        <p class="text-gray-500">
+          Developing & Designing at <a
+            href="https://curlware.com"
+            class=""
+            target="_blank">Curlware</a
+          >
+        </p>
+
+        <p class="mt-6">Previously</p>
+        <p class="text-gray-500">
+          <strong class="text-text">Markopolo</strong> · Frontend Engineer
+        </p>
+
+        <p class="mt-6">Elsewhere</p>
+        <div class="mb-6 flex flex-wrap gap-x-6">
+          <a href="https://rabius-sunny.vercel.app" target="_blank">Website</a>
+
+          <a
+            href="https://github.com/rabius-sunny"
+            class="text-primary underline hover:text-primary/80"
+            target="_blank"
+          >
+            Github
+          </a>
+          <a
+            href="https://twitter.com/rabius-sunny"
+            class="text-primary underline hover:text-primary/80"
+            target="_blank"
+          >
+            Twitter
+          </a>
+          <a
+            href="https://www.linkedin.com/in/rabius-sunny"
+            class="text-primary underline hover:text-primary/80"
+            target="_blank"
+          >
+            LinkedIn
+          </a>
+          <a
+            href="https://www.instagram.com/rabius-sunny"
+            class="text-primary underline hover:text-primary/80"
+            target="_blank"
+          >
+            Instagram
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+</Layout>
